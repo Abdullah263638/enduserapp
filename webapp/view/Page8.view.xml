@@ -70,7 +70,7 @@
                     <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
                 </form:layout>
             </form:Form>
-           	<List id="bestellingen" items="{path: '/ExProjectSet ,
+           	<List id="bestellingen" items="{path: '/ExProjectSet' ,
         	filters : [
             { path :'Userid', operator : 'EQ', value1 : 'P1942248500'}
         		]

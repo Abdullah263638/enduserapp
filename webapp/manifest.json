@@ -67,7 +67,7 @@
 				"type": "sap.ui.model.resource.ResourceModel",
 				"uri": "i18n/i18n.properties"
 			},
-				"": {
+			"": {
 				"type": "sap.ui.model.odata.v2.ODataModel",
 				"settings": {
 					"defaultOperationMode": "Server",
@@ -402,5 +402,9 @@
 				}
 			]
 		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
 	}
 }
