@@ -1,0 +1,38 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.Page3" xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Page showHeader="true" title="Persoonlijke Voorkeuren" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content>
+            <StandardListItem title="Werkuren" description="" info="" infoState="Success" type="Active" selected="true"/>
+            <StandardListItem title="Start" description="" info="" infoState="Success" type="Active" selected="false"/>
+            <DateTimeInput type="Time" enabled="true" visible="true" width="auto"/>
+            <StandardListItem title="Einde" description="" info="" infoState="Success" type="Active" selected="false"/>
+            <DateTimeInput type="Time" enabled="true" visible="true" width="auto"/>
+            <StandardListItem title="Werkplaats" description="" info="" infoState="Success" type="Active" selected="true"/>
+            <MultiComboBox value="Aalst" editable="true" enabled="true" width="100%" valueState="None" maxWidth="100%">
+                <items>
+                    <core:Item text="Aalst" enabled="true" key="Aalst"/>
+                    <core:Item text="Gent" enabled="true" key="Gent"/>
+                    <core:Item text="Antwerpen" enabled="true" key="Antwerpen"/>
+                </items>
+            </MultiComboBox>
+            <StandardListItem title="Vervoer" description="" info="" infoState="None" type="Active" selected="true"/>
+            <CheckBox text="Bus" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"/>
+            <CheckBox text="Auto" selected="true" editable="true" enabled="true" visible="true" width="100%" textDirection="RTL"/>
+            <CheckBox text="Trein" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"/>
+            <StandardListItem icon="sap-icon://add" title="Other" description="" info="" infoState="None" type="Active" selected="true"/>
+            <Input value="Ik wil op woensdag vrij zijn." type="Text" showValueHelp="false" enabled="true" visible="true" width="100%" valueHelpOnly="false" maxLength="0"/>
+            <ProgressIndicator width="100%" percentValue="75" showValue="true" displayValue="Progress" state="Success" enabled="true" visible="true"/>
+        </content>
+        <footer>
+            <Bar design="Auto">
+                <contentLeft/>
+                <contentMiddle>
+                    <Button text="Save" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </contentMiddle>
+                <contentRight/>
+            </Bar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

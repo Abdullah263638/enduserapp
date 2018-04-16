@@ -1,0 +1,29 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.Page17" xmlns="sap.m">
+    <Page showHeader="true" title="Skills" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content>
+            <ObjectListItem intro="" title="Skills 1" number="" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
+                <attributes>
+                    <ObjectAttribute text="" active="false"/>
+                </attributes>
+                <firstStatus>
+                    <ObjectStatus text="04/08/2016" state="None"/>
+                </firstStatus>
+                <secondStatus>
+                    <ObjectStatus text="" state="None"/>
+                </secondStatus>
+            </ObjectListItem>
+        </content>
+        <footer>
+            <Bar design="Auto">
+                <contentLeft/>
+                <contentMiddle/>
+                <contentRight/>
+            </Bar>
+        </footer>
+        <headerContent>
+            <Button text="" type="Default" icon="sap-icon://add" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+        </headerContent>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

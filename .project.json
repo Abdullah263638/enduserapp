@@ -1,0 +1,88 @@
+{
+  "dataBinding": {
+    "/webapp/view/Page1.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page2.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page3.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page4.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page5.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page6.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page7.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page8.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page9.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page10.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page11.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page12.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page13.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Dialog1.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page14.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Dialog2.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page15.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page16.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page17.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page19.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page20.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page21.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/Page22.view.xml": {
+      "entitySet": ""
+    }
+  },
+  "generation": [
+    {
+      "templateId": "servicecatalog.connectivityComponent",
+      "templateVersion": "0.0.0",
+      "dateTimeStamp": "Fri, 13 Apr 2018 12:40:02 GMT"
+    }
+  ],
+  "mockpreview": {
+    "mockUri": "/sap/opu/odata/sap/Z_STAGE_SRV",
+    "metadataFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "hybrid": {}
+}

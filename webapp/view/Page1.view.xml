@@ -1,0 +1,32 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.Page1" xmlns="sap.m">
+    <Page showHeader="false" title="TVC" showFooter="true" showNavButton="false">
+        <content>
+            <Image src="/webapp/resources/Valuechainlogo.png" height="322px" width="320px" densityAware="false"/>
+            <StandardListItem icon="sap-icon://person-placeholder" title="My Account" description="" info="" infoState="None" type="Navigation" selected="false" press="_onStandardListItemPress"/>
+            <StandardListItem icon="sap-icon://hint" title="Functional" description="" info="" infoState="None" type="Navigation" selected="false" press="_onStandardListItemPress1"/>
+            <StandardListItem icon="sap-icon://laptop" title="Development" description="" info="" infoState="None" type="Navigation" selected="false" press="_onStandardListItemPress2"/>
+            <StandardListItem icon="sap-icon://family-care" title="Management" description="" info="" infoState="None" type="Navigation" selected="false" press="_onStandardListItemPress3"/>
+            <StandardListItem icon="sap-icon://competitor" title="Certificates" description="" info="" infoState="None" type="Navigation" selected="false" press="_onStandardListItemPress4"/>
+            <StandardListItem icon="sap-icon://competitor" title="Opleidingen" description="" info="" infoState="None" type="Navigation" selected="false" press="_onStandardListItemPress5"/>
+            <StandardListItem icon="sap-icon://competitor" title="Skills" description="" info="" infoState="None" type="Navigation" selected="false" press="_onStandardListItemPress6"/>
+            <StandardListItem icon="sap-icon://competitor" title="Projects" description="" info="" infoState="None" type="Navigation" selected="false" press="_onStandardListItemPress7"/>
+            <StandardListItem icon="sap-icon://cloud" title="News" description="" info="" infoState="Success" type="Navigation" selected="false" press="_onStandardListItemPress8"/>
+            <List width="100%" growing="false" growingThreshold="20" growingScrollToLoad="false" backgroundDesign="Solid">
+                <items>
+                    <FeedListItem icon="" sender="Pierrot Janson" text="Iemand mijn jas gevonden?" info="" timestamp="March 03 2016"/>
+                </items>
+            </List>
+            <FeedInput showIcon="true" icon="" placeholder="Post something here" enabled="true" visible="true" maxLength="0" buttonTooltip="Submit" post="_onFeedInputPost"/>
+        </content>
+        <footer>
+            <Bar design="Auto">
+                <contentLeft/>
+                <contentMiddle/>
+                <contentRight/>
+            </Bar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>
