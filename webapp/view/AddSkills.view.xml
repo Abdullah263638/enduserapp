@@ -1,9 +1,9 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.SAPDomeinTypeDeveloper0" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
-    <Page showHeader="true" title="Opleidingen" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.AddSkills" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <Page showHeader="true" title="Skills" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
         <content>
             <form:Form width="100%" editable="true" visible="true">
                 <form:title>
-                    <core:Title text="Opleiding" level="Auto"/>
+                    <core:Title text="Skill" level="Auto"/>
                 </form:title>
                 <form:formContainers>
                     <form:FormContainer visible="true">
@@ -18,15 +18,7 @@
                             </form:FormElement>
                             <form:FormElement visible="true">
                                 <form:label>
-                                    <Label text="Schoolnaam" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
-                                </form:label>
-                                <form:fields>
-                                    <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
-                                </form:fields>
-                            </form:FormElement>
-                            <form:FormElement visible="true">
-                                <form:label>
-                                    <Label text="Jaar" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <Label text="Beschrijving" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
                                 </form:label>
                                 <form:fields>
                                     <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
@@ -48,16 +40,16 @@
                     <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
                 </form:layout>
             </form:Form>
-            <ObjectListItem intro="" title="Opleiding 1" number="" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
+            <List id="skills" items="{path: '/ExSkillsSet' }" selectionChange="onItemSelect" growing="true" growingScrollToLoad="true" >
+				     	<items>
+            <ObjectListItem intro="" title="{Naam}" number="" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
                 <attributes>
-                    <ObjectAttribute text="beschrijving" active="false"/>
-                    <ObjectAttribute text="schoolnaam" active="false"/>
+                    <ObjectAttribute text="{Beschrijving}" active="false"/>
                 </attributes>
-                <firstStatus/>
-                <secondStatus>
-                    <ObjectStatus text="jaar" state="None"/>
-                </secondStatus>
+        
             </ObjectListItem>
+            </items>
+</List>
         </content>
         <footer>
             <Bar design="Auto">

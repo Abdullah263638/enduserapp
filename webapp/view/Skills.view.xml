@@ -1,0 +1,28 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.Skills" xmlns="sap.m">
+    <Page showHeader="true" title="Skills" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content>
+        <List id="skills" items="{path: '/ExSkillsSet' }" selectionChange="onItemSelect" growing="true" growingScrollToLoad="true" >
+				     	<items>
+            <ObjectListItem intro="" title="{Naam}" number="" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
+                <attributes>
+                    <ObjectAttribute text="{Beschrijving}" active="false"/>
+                </attributes>
+        
+            </ObjectListItem>
+            </items>
+</List>
+        </content>
+        <footer>
+            <Bar design="Auto">
+                <contentLeft/>
+                <contentMiddle/>
+                <contentRight/>
+            </Bar>
+        </footer>
+        <headerContent>
+            <Button text="" type="Default" icon="sap-icon://add" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+        </headerContent>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

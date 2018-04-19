@@ -1,0 +1,22 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.SAPDomeinTypeDeveloper" xmlns="sap.m">
+    <Page showHeader="true" title="Development" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content>
+            <StandardListItem title="Integration" description="" info="" infoState="Success" type="Navigation" selected="true" press="_onStandardListItemPress"/>
+            <StandardListItem title="Development" description="" info="" infoState="Success" type="Navigation" selected="true" press="_onStandardListItemPress1"/>
+            <StandardListItem title="Other" description="" info="" infoState="Success" type="Navigation" selected="true" press="_onStandardListItemPress2"/>
+            <ProgressIndicator width="100%" percentValue="75" showValue="true" displayValue="Progress" state="Success" enabled="true" visible="true"/>
+        </content>
+        <footer>
+            <Bar design="Auto">
+                <contentLeft/>
+                <contentMiddle>
+                    <Button text="Save" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </contentMiddle>
+                <contentRight/>
+            </Bar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

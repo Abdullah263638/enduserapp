@@ -1,72 +1,72 @@
 {
   "dataBinding": {
-    "/webapp/view/Page1.view.xml": {
+    "/webapp/view/Homepage.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page2.view.xml": {
+    "/webapp/view/SAPDomeinTypeDeveloper.view.xml": {
       "entitySet": ""
     },
     "/webapp/view/Page3.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page4.view.xml": {
+    "/webapp/view/Management.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page5.view.xml": {
+    "/webapp/view/AddCertificate.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page6.view.xml": {
+    "/webapp/view/Newsletter.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page7.view.xml": {
+    "/webapp/view/MyAccount.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page8.view.xml": {
+    "/webapp/view/AddProject.view.xml": {
       "entitySet": ""
     },
     "/webapp/view/Page9.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page10.view.xml": {
+    "/webapp/view/Addopleiding.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page11.view.xml": {
+    "/webapp/view/SAPDomeinTypeFunctional.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page12.view.xml": {
+    "/webapp/view/ScoreTypeDeveloper.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page13.view.xml": {
+    "/webapp/view/ScoreTypeFunctional.view.xml": {
       "entitySet": ""
     },
     "/webapp/view/Dialog1.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page14.view.xml": {
+    "/webapp/view/Projects.view.xml": {
       "entitySet": ""
     },
     "/webapp/view/Dialog2.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page15.view.xml": {
+    "/webapp/view/Certificate.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page16.view.xml": {
+    "/webapp/view/Opleiding.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page17.view.xml": {
+    "/webapp/view/Skills.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page19.view.xml": {
+    "/webapp/view/AddSkills.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page20.view.xml": {
+    "/webapp/view/SAPDomeinTypeDeveloper0.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page21.view.xml": {
+    "/webapp/view/SAPDomeinTypeDeveloper1.view.xml": {
       "entitySet": ""
     },
-    "/webapp/view/Page22.view.xml": {
+    "/webapp/view/SAPDomeinTypeDeveloper2.view.xml": {
       "entitySet": ""
     }
   },

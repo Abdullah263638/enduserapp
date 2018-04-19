@@ -1,15 +1,16 @@
 sap.ui.define(["sap/ui/core/mvc/Controller",
 	"sap/m/MessageBox",
 	"./utilities",
-	"sap/ui/core/routing/History"
-], function(BaseController, MessageBox, Utilities, History) {
+	"sap/ui/core/routing/History",
+	"sap/ui/model/Filter",
+	"sap/ui/model/FilterOperator",
+], function(BaseController, MessageBox, Utilities, History,Filter, FilterOperator) {
 	"use strict";
 
-	return BaseController.extend("com.sap.build.standard.endUserApp.controller.Page9", {
+	return BaseController.extend("com.sap.build.standard.endUserApp.controller.SAPDomeinTypeFunctional", {
 		handleRouteMatched: function(oEvent) {
 
 			var oParams = {};
-
 			if (oEvent.mParameters.data.context) {
 				this.sContext = oEvent.mParameters.data.context;
 				var oPath;
@@ -21,7 +22,16 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 					this.getView().bindObject(oPath);
 				}
 			}
-
+			
+		var filters = [];
+		var filterByName = new sap.ui.model.Filter("Typedeveloperid", sap.ui.model.FilterOperator.EQ, "0000000000" );
+		var filterByName2 = new sap.ui.model.Filter("Typefuncid", sap.ui.model.FilterOperator.NE, "0000000000" );
+		filters.push(filterByName);
+		filters.push(filterByName2);
+		var oList = this.byId("sapdomein");
+		var oBinding = oList.getBinding("items");
+		oBinding.filter(filters);
+		
 		},
 		_onPageNavButtonPress: function() {
 
@@ -47,13 +57,12 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 			return oQuery;
 
 		},
-		_onButtonPress: function(oEvent) {
+		_onStandardListItemPress: function(oEvent) {
 
 			var oBindingContext = oEvent.getSource().getBindingContext();
-
 			return new Promise(function(fnResolve) {
 
-				this.doNavigate("Addopleiding", oBindingContext, fnResolve, "");
+				this.doNavigate("ScoreTypeFunctional", oBindingContext, fnResolve, "");
 			}.bind(this)).catch(function(err) {
 				if (err !== undefined) {
 					MessageBox.error(err.message);
@@ -115,9 +124,37 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 				fnPromiseResolve();
 			}
 		},
+		_onStandardListItemPress1: function(oEvent) {
+
+			var oBindingContext = oEvent.getSource().getBindingContext();
+
+			return new Promise(function(fnResolve) {
+
+				this.doNavigate("SAPDomeinTypeDeveloper1", oBindingContext, fnResolve, "");
+			}.bind(this)).catch(function(err) {
+				if (err !== undefined) {
+					MessageBox.error(err.message);
+				}
+			});
+
+		},
+		_onStandardListItemPress2: function(oEvent) {
+
+			var oBindingContext = oEvent.getSource().getBindingContext();
+
+			return new Promise(function(fnResolve) {
+
+				this.doNavigate("SAPDomeinTypeDeveloper2", oBindingContext, fnResolve, "");
+			}.bind(this)).catch(function(err) {
+				if (err !== undefined) {
+					MessageBox.error(err.message);
+				}
+			});
+
+		},
 		onInit: function() {
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			this.oRouter.getTarget("Page9").attachDisplay(jQuery.proxy(this.handleRouteMatched, this));
+			this.oRouter.getTarget("SAPDomeinTypeFunctional").attachDisplay(jQuery.proxy(this.handleRouteMatched, this));
 
 		}
 	});

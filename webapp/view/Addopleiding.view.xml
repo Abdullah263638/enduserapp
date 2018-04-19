@@ -1,0 +1,93 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.Addopleiding" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <Page showHeader="true" title="Opleiding" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content>
+            <form:Form width="100%" editable="true" visible="true">
+                <form:title/>
+                <form:formContainers>
+                    <form:FormContainer visible="true">
+                        <form:formElements>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Naam" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                </form:label>
+                                <form:fields>
+                                    <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="School" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                </form:label>
+                                <form:fields>
+                                    <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Graad" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                </form:label>
+                                <form:fields>
+                                    <ComboBox selectedKey="Master" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                        <items>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                        </items>
+                                    </ComboBox>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Start" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                </form:label>
+                                <form:fields>
+                                    <DatePicker enabled="true" visible="true" width="auto" displayFormat="MMM dd, yyyy"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Einde" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                </form:label>
+                                <form:fields>
+                                    <DatePicker enabled="true" visible="true" width="auto" displayFormat="MMM dd, yyyy"/>
+                                </form:fields>
+                            </form:FormElement>
+                        </form:formElements>
+                        <form:title/>
+                    </form:FormContainer>
+                </form:formContainers>
+                <form:layout>
+                    <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                </form:layout>
+            </form:Form>
+    <List id="opleiding" items="{path: '/ExOpleidingSet' }" selectionChange="onItemSelect" growing="true" growingScrollToLoad="true" >
+				             	<items>
+            <ObjectListItem intro="" title="{Naam}" number="" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
+                <attributes>
+                    <ObjectAttribute text="{Instellingnaam}" active="false"/>
+                    <ObjectAttribute text="" active="false"/>
+                </attributes>
+                <firstStatus>
+                    <ObjectStatus text="{Startdatum}" state="None"/>
+                </firstStatus>
+                <secondStatus>
+                    <ObjectStatus text="{Einddatum}" state="None"/>
+                </secondStatus>
+            </ObjectListItem>
+            </items>
+</List>
+        </content>
+        <footer>
+            <Bar design="Auto">
+                <contentLeft/>
+                <contentMiddle>
+                    <Button text="Add" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </contentMiddle>
+                <contentRight/>
+            </Bar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

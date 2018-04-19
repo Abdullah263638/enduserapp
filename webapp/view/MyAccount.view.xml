@@ -1,0 +1,39 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.MyAccount" xmlns="sap.m">
+    <Page showHeader="true" title="Account" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content>
+            <Image src="/webapp/resources/barcode.jpg" height="318.991455078125px" width="318.991455078125px" densityAware="false"/>
+            <List id="profileinfo" items="{path: '/ExProfileinfoSet' }" selectionChange="onItemSelect" growing="true" growingScrollToLoad="true" >
+				             	<items>
+            <ObjectListItem intro="" title="{Naam}" number="" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
+                <attributes>
+                    <ObjectAttribute text="{Functie}" active="false"/>
+                    <ObjectAttribute title="Adres" text="{Adres}" active="false"/>
+                    <ObjectAttribute title="Geboortedatum" text="{Geboortedatum}" active="false"/>
+                </attributes>
+                <firstStatus>
+                    <ObjectStatus title="Werkstart" text="{Werkstart}" state="None"/>
+                </firstStatus>
+                <secondStatus>
+                    <ObjectStatus title="Werkeinde" text="{Werkeinde}" state="None"/>
+                </secondStatus>
+            </ObjectListItem>
+            
+            </items>
+</List>
+            <StandardListItem title="Projects" description="" info="" infoState="None" type="Navigation" selected="true" press="_onStandardListItemPress"/>
+            <StandardListItem title="Certificates" description="" info="" infoState="None" type="Navigation" selected="true" press="_onStandardListItemPress1"/>
+            <StandardListItem title="Opleidingen" description="" info="" infoState="None" type="Navigation" selected="true" press="_onStandardListItemPress2"/>
+            <StandardListItem title="Skills" description="" info="" infoState="None" type="Navigation" selected="true" press="_onStandardListItemPress3"/>
+        </content>
+        <footer>
+            <Bar design="Auto">
+                <contentLeft/>
+                <contentMiddle/>
+                <contentRight/>
+            </Bar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

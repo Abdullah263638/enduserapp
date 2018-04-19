@@ -1,0 +1,34 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.Projects" xmlns="sap.m">
+    <Page showHeader="true" title="Projects" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content>
+        	<List id="projecten" items="{path: '/ExProjectSet' }" selectionChange="onItemSelect" growing="true" growingScrollToLoad="true" >
+				             	<items>
+							            <ObjectListItem intro="" title="{Name}" number="" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
+							                <attributes>
+							                    <ObjectAttribute text="{Bedrijfsnaam}" active="false"/>
+							                    <ObjectAttribute text="" active="false"/>
+							                </attributes>
+							                <firstStatus>
+							                    <ObjectStatus text="{Startdatum}" state="None"/>
+							                </firstStatus>
+							                <secondStatus>
+							                    <ObjectStatus text="{Einddatum}" state="None"/>
+							                </secondStatus>
+							            </ObjectListItem>
+							     </items>
+</List>
+        </content>
+        <footer>
+            <Bar design="Auto">
+                <contentLeft/>
+                <contentMiddle/>
+                <contentRight/>
+            </Bar>
+        </footer>
+        <headerContent>
+            <Button text="" type="Default" icon="sap-icon://add" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+        </headerContent>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

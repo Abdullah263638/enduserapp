@@ -47,7 +47,7 @@
 	"sap.ui5": {
 		"_version": "1.3.0",
 		"rootView": {
-			"viewName": "generated.app.view.Page22",
+			"viewName": "generated.app.view.SAPDomeinTypeDeveloper2",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -92,22 +92,22 @@
 				"controlAggregation": "pages",
 				"bypassed": {
 					"target": [
-						"Page1"
+						"Homepage"
 					]
 				}
 			},
 			"targets": {
-				"Page1": {
+				"Homepage": {
 					"controlAggregation": "pages",
-					"viewName": "Page1",
-					"viewId": "Page1",
+					"viewName": "Homepage",
+					"viewId": "Homepage",
 					"viewLevel": 1,
 					"transition": "slide"
 				},
-				"Page2": {
+				"SAPDomeinTypeDeveloper": {
 					"controlAggregation": "pages",
-					"viewName": "Page2",
-					"viewId": "Page2",
+					"viewName": "SAPDomeinTypeDeveloper",
+					"viewId": "SAPDomeinTypeDeveloper",
 					"viewLevel": 5,
 					"transition": "slide"
 				},
@@ -118,38 +118,38 @@
 					"viewLevel": 1,
 					"transition": "slide"
 				},
-				"Page4": {
+				"Management": {
 					"controlAggregation": "pages",
-					"viewName": "Page4",
-					"viewId": "Page4",
+					"viewName": "Management",
+					"viewId": "Management",
 					"viewLevel": 4,
 					"transition": "slide"
 				},
-				"Page5": {
+				"AddCertificate": {
 					"controlAggregation": "pages",
-					"viewName": "Page5",
-					"viewId": "Page5",
+					"viewName": "AddCertificate",
+					"viewId": "AddCertificate",
 					"viewLevel": 16,
 					"transition": "slide"
 				},
-				"Page6": {
+				"Newsletter": {
 					"controlAggregation": "pages",
-					"viewName": "Page6",
-					"viewId": "Page6",
+					"viewName": "Newsletter",
+					"viewId": "Newsletter",
 					"viewLevel": 3,
 					"transition": "slide"
 				},
-				"Page7": {
+				"MyAccount": {
 					"controlAggregation": "pages",
-					"viewName": "Page7",
-					"viewId": "Page7",
+					"viewName": "MyAccount",
+					"viewId": "MyAccount",
 					"viewLevel": 11,
 					"transition": "slide"
 				},
-				"Page8": {
+				"AddProject": {
 					"controlAggregation": "pages",
-					"viewName": "Page8",
-					"viewId": "Page8",
+					"viewName": "AddProject",
+					"viewId": "AddProject",
 					"viewLevel": 13,
 					"transition": "slide"
 				},
@@ -160,111 +160,111 @@
 					"viewLevel": 19,
 					"transition": "slide"
 				},
-				"Page10": {
+				"Addopleiding": {
 					"controlAggregation": "pages",
-					"viewName": "Page10",
-					"viewId": "Page10",
+					"viewName": "Addopleiding",
+					"viewId": "Addopleiding",
 					"viewLevel": 20,
 					"transition": "slide"
 				},
-				"Page11": {
+				"SAPDomeinTypeFunctional": {
 					"controlAggregation": "pages",
-					"viewName": "Page11",
-					"viewId": "Page11",
+					"viewName": "SAPDomeinTypeFunctional",
+					"viewId": "SAPDomeinTypeFunctional",
 					"viewLevel": 7,
 					"transition": "slide"
 				},
-				"Page12": {
+				"ScoreTypeDeveloper": {
 					"controlAggregation": "pages",
-					"viewName": "Page12",
-					"viewId": "Page12",
+					"viewName": "ScoreTypeDeveloper",
+					"viewId": "ScoreTypeDeveloper",
 					"viewLevel": 6,
 					"transition": "slide"
 				},
-				"Page13": {
+				"ScoreTypeFunctional": {
 					"controlAggregation": "pages",
-					"viewName": "Page13",
-					"viewId": "Page13",
+					"viewName": "ScoreTypeFunctional",
+					"viewId": "ScoreTypeFunctional",
 					"viewLevel": 8,
 					"transition": "slide"
 				},
-				"Page14": {
+				"Projects": {
 					"controlAggregation": "pages",
-					"viewName": "Page14",
-					"viewId": "Page14",
+					"viewName": "Projects",
+					"viewId": "Projects",
 					"viewLevel": 12,
 					"transition": "slide"
 				},
-				"Page15": {
+				"Certificate": {
 					"controlAggregation": "pages",
-					"viewName": "Page15",
-					"viewId": "Page15",
+					"viewName": "Certificate",
+					"viewId": "Certificate",
 					"viewLevel": 15,
 					"transition": "slide"
 				},
-				"Page16": {
+				"Opleiding": {
 					"controlAggregation": "pages",
-					"viewName": "Page16",
-					"viewId": "Page16",
+					"viewName": "Opleiding",
+					"viewId": "Opleiding",
 					"viewLevel": 14,
 					"transition": "slide"
 				},
-				"Page17": {
+				"Skills": {
 					"controlAggregation": "pages",
-					"viewName": "Page17",
-					"viewId": "Page17",
+					"viewName": "Skills",
+					"viewId": "Skills",
 					"viewLevel": 17,
 					"transition": "slide"
 				},
-				"Page19": {
+				"AddSkills": {
 					"controlAggregation": "pages",
-					"viewName": "Page19",
-					"viewId": "Page19",
+					"viewName": "AddSkills",
+					"viewId": "AddSkills",
 					"viewLevel": 18,
 					"transition": "slide"
 				},
-				"Page20": {
+				"SAPDomeinTypeDeveloper0": {
 					"controlAggregation": "pages",
-					"viewName": "Page20",
-					"viewId": "Page20",
+					"viewName": "SAPDomeinTypeDeveloper0",
+					"viewId": "SAPDomeinTypeDeveloper0",
 					"viewLevel": 2,
 					"transition": "slide"
 				},
-				"Page21": {
+				"SAPDomeinTypeDeveloper1": {
 					"controlAggregation": "pages",
-					"viewName": "Page21",
-					"viewId": "Page21",
+					"viewName": "SAPDomeinTypeDeveloper1",
+					"viewId": "SAPDomeinTypeDeveloper1",
 					"viewLevel": 10,
 					"transition": "slide"
 				},
-				"Page22": {
+				"SAPDomeinTypeDeveloper2": {
 					"controlAggregation": "pages",
-					"viewName": "Page22",
-					"viewId": "Page22",
+					"viewName": "SAPDomeinTypeDeveloper2",
+					"viewId": "SAPDomeinTypeDeveloper2",
 					"viewLevel": 9,
 					"transition": "slide"
 				}
 			},
 			"routes": [
 				{
-					"pattern": "Page1/:context:",
-					"name": "Page1",
+					"pattern": "Homepage/:context:",
+					"name": "Homepage",
 					"target": [
-						"Page1"
+						"Homepage"
 					]
 				},
 				{
 					"pattern": "",
 					"name": "default",
 					"target": [
-						"Page1"
+						"Homepage"
 					]
 				},
 				{
-					"pattern": "Page2/:context:",
-					"name": "Page2",
+					"pattern": "SAPDomeinTypeDeveloper/:context:",
+					"name": "SAPDomeinTypeDeveloper",
 					"target": [
-						"Page2"
+						"SAPDomeinTypeDeveloper"
 					]
 				},
 				{
@@ -275,38 +275,38 @@
 					]
 				},
 				{
-					"pattern": "Page4/:context:",
-					"name": "Page4",
+					"pattern": "Management/:context:",
+					"name": "Management",
 					"target": [
-						"Page4"
+						"Management"
 					]
 				},
 				{
-					"pattern": "Page5/:context:",
-					"name": "Page5",
+					"pattern": "AddCertificate/:context:",
+					"name": "AddCertificate",
 					"target": [
-						"Page5"
+						"AddCertificate"
 					]
 				},
 				{
-					"pattern": "Page6/:context:",
-					"name": "Page6",
+					"pattern": "Newsletter/:context:",
+					"name": "Newsletter",
 					"target": [
-						"Page6"
+						"Newsletter"
 					]
 				},
 				{
-					"pattern": "Page7/:context:",
-					"name": "Page7",
+					"pattern": "MyAccount/:context:",
+					"name": "MyAccount",
 					"target": [
-						"Page7"
+						"MyAccount"
 					]
 				},
 				{
-					"pattern": "Page8/:context:",
-					"name": "Page8",
+					"pattern": "AddProject/:context:",
+					"name": "AddProject",
 					"target": [
-						"Page8"
+						"AddProject"
 					]
 				},
 				{
@@ -317,87 +317,87 @@
 					]
 				},
 				{
-					"pattern": "Page10/:context:",
-					"name": "Page10",
+					"pattern": "Addopleiding/:context:",
+					"name": "Addopleiding",
 					"target": [
-						"Page10"
+						"Addopleiding"
 					]
 				},
 				{
-					"pattern": "Page11/:context:",
-					"name": "Page11",
+					"pattern": "SAPDomeinTypeFunctional/:context:",
+					"name": "SAPDomeinTypeFunctional",
 					"target": [
-						"Page11"
+						"SAPDomeinTypeFunctional"
 					]
 				},
 				{
-					"pattern": "Page12/:context:",
-					"name": "Page12",
+					"pattern": "ScoreTypeDeveloper/:context:",
+					"name": "ScoreTypeDeveloper",
 					"target": [
-						"Page12"
+						"ScoreTypeDeveloper"
 					]
 				},
 				{
-					"pattern": "Page13/:context:",
-					"name": "Page13",
+					"pattern": "ScoreTypeFunctional/:context:",
+					"name": "ScoreTypeFunctional",
 					"target": [
-						"Page13"
+						"ScoreTypeFunctional"
 					]
 				},
 				{
-					"pattern": "Page14/:context:",
-					"name": "Page14",
+					"pattern": "Projects/:context:",
+					"name": "Projects",
 					"target": [
-						"Page14"
+						"Projects"
 					]
 				},
 				{
-					"pattern": "Page15/:context:",
-					"name": "Page15",
+					"pattern": "Certificate/:context:",
+					"name": "Certificate",
 					"target": [
-						"Page15"
+						"Certificate"
 					]
 				},
 				{
-					"pattern": "Page16/:context:",
-					"name": "Page16",
+					"pattern": "Opleiding/:context:",
+					"name": "Opleiding",
 					"target": [
-						"Page16"
+						"Opleiding"
 					]
 				},
 				{
-					"pattern": "Page17/:context:",
-					"name": "Page17",
+					"pattern": "Skills/:context:",
+					"name": "Skills",
 					"target": [
-						"Page17"
+						"Skills"
 					]
 				},
 				{
-					"pattern": "Page19/:context:",
-					"name": "Page19",
+					"pattern": "AddSkills/:context:",
+					"name": "AddSkills",
 					"target": [
-						"Page19"
+						"AddSkills"
 					]
 				},
 				{
-					"pattern": "Page20/:context:",
-					"name": "Page20",
+					"pattern": "SAPDomeinTypeDeveloper0/:context:",
+					"name": "SAPDomeinTypeDeveloper0",
 					"target": [
-						"Page20"
+						"SAPDomeinTypeDeveloper0"
 					]
 				},
 				{
-					"pattern": "Page21/:context:",
-					"name": "Page21",
+					"pattern": "SAPDomeinTypeDeveloper1/:context:",
+					"name": "SAPDomeinTypeDeveloper1",
 					"target": [
-						"Page21"
+						"SAPDomeinTypeDeveloper1"
 					]
 				},
 				{
-					"pattern": "Page22/:context:",
-					"name": "Page22",
+					"pattern": "SAPDomeinTypeDeveloper2/:context:",
+					"name": "SAPDomeinTypeDeveloper2",
 					"target": [
-						"Page22"
+						"SAPDomeinTypeDeveloper2"
 					]
 				}
 			]

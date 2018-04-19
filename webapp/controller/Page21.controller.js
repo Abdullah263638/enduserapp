@@ -5,7 +5,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 ], function(BaseController, MessageBox, Utilities, History) {
 	"use strict";
 
-	return BaseController.extend("com.sap.build.standard.endUserApp.controller.Page21", {
+	return BaseController.extend("com.sap.build.standard.endUserApp.controller.SAPDomeinTypeDeveloper1", {
 		handleRouteMatched: function(oEvent) {
 
 			var oParams = {};
@@ -53,7 +53,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 
 			return new Promise(function(fnResolve) {
 
-				this.doNavigate("Page8", oBindingContext, fnResolve, "");
+				this.doNavigate("AddProject", oBindingContext, fnResolve, "");
 			}.bind(this)).catch(function(err) {
 				if (err !== undefined) {
 					MessageBox.error(err.message);
@@ -121,7 +121,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 
 			return new Promise(function(fnResolve) {
 
-				this.doNavigate("Page8", oBindingContext, fnResolve, "");
+				this.doNavigate("AddProject", oBindingContext, fnResolve, "");
 			}.bind(this)).catch(function(err) {
 				if (err !== undefined) {
 					MessageBox.error(err.message);
@@ -135,7 +135,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 
 			return new Promise(function(fnResolve) {
 
-				this.doNavigate("Page8", oBindingContext, fnResolve, "");
+				this.doNavigate("AddProject", oBindingContext, fnResolve, "");
 			}.bind(this)).catch(function(err) {
 				if (err !== undefined) {
 					MessageBox.error(err.message);
@@ -145,7 +145,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 		},
 		onInit: function() {
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			this.oRouter.getTarget("Page21").attachDisplay(jQuery.proxy(this.handleRouteMatched, this));
+			this.oRouter.getTarget("SAPDomeinTypeDeveloper1").attachDisplay(jQuery.proxy(this.handleRouteMatched, this));
 
 		}
 	});

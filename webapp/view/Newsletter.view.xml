@@ -1,0 +1,17 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.Newsletter" xmlns="sap.m">
+    <Page showHeader="true" title="News" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content>
+            <List width="100%" growing="false" growingThreshold="20" growingScrollToLoad="false" backgroundDesign="Solid">
+                <items>
+                    <FeedListItem icon="" sender="Pierrot Janson" text="Iemand mijn rode  jas gevonden?" info="Request" timestamp="March 03 2016"/>
+                    <FeedListItem icon="" sender="Doris de Doncker" text="Gratis pannekoeken morgen avond in TVC." info="Request" timestamp="March 04 2016"/>
+                    <FeedListItem icon="" sender="Femke Cortier" text="Helpers nodig voor Netweaver fun event?" info="Request" timestamp="March 07 2016"/>
+                </items>
+            </List>
+        </content>
+        <footer/>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

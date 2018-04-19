@@ -1,0 +1,103 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.AddProject" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <Page showHeader="true" title="Ervaring" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <content>
+            <form:Form width="100%" editable="true" visible="true">
+                <form:title>
+                    <core:Title text="Project" level="Auto"/>
+                </form:title>
+                <form:formContainers>
+                    <form:FormContainer visible="true">
+                        <form:formElements>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Projectnaam" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                </form:label>
+                                <form:fields>
+                                    <Input id="Projectnaam" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0" />
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Bedrijfsnaam" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                </form:label>
+                                <form:fields>
+                                    <Input id="Bedrijfsnaam" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Startdatum" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                </form:label>
+                                <form:fields>
+                                    <DateTimeInput id="Startdatum" type="DateTime" enabled="true" visible="true" width="auto"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Einddatum" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                </form:label>
+                                <form:fields>
+                                    <DateTimeInput id="Einddatum" type="DateTime" enabled="true" visible="true" width="auto"/>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="Skills" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                </form:label>
+                                <form:fields>
+                                    <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                        <items>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                        </items>
+                                    </ComboBox>
+                                </form:fields>
+                            </form:FormElement>
+                            <form:FormElement visible="true">
+                                <form:label>
+                                    <Label text="" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                </form:label>
+                                <form:fields>
+                                    <Button id="SaveButton" text="Save" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="SaveButton"/>
+                                </form:fields>
+                            </form:FormElement>
+                        </form:formElements>
+                        <form:title/>
+                    </form:FormContainer>
+                </form:formContainers>
+                <form:layout>
+                    <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                </form:layout>
+            </form:Form>
+           	<List id="projecten" items="{path: '/ExProjectSet' }" selectionChange="onItemSelect" growing="true" growingScrollToLoad="true" >
+				             	<items>
+            <ObjectListItem intro="" title="{Name}" number="" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
+                <attributes>
+                    <ObjectAttribute text="{Bedrijfsnaam}" active="false"/>
+                    <ObjectAttribute text="" active="false"/>
+                </attributes>
+                <firstStatus>
+                    <ObjectStatus text="{Startdatum}" state="None"/>
+                </firstStatus>
+                <secondStatus>
+                    <ObjectStatus text="{Einddatum}" state="None"/>
+                </secondStatus>
+            </ObjectListItem>
+              </items>
+</List>
+        </content>
+        <footer>
+            <Bar design="Auto">
+                <contentLeft/>
+                <contentMiddle/>
+                <contentRight/>
+            </Bar>
+        </footer>
+        <headerContent>
+            <Button text="" type="Default" icon="sap-icon://add" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+        </headerContent>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

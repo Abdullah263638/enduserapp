@@ -1,11 +1,13 @@
 sap.ui.define(["sap/ui/core/mvc/Controller",
 	"sap/m/MessageBox",
 	"./utilities",
-	"sap/ui/core/routing/History"
-], function(BaseController, MessageBox, Utilities, History) {
+	"sap/ui/core/routing/History",
+	"sap/ui/model/Filter",
+	"sap/ui/model/FilterOperator",
+], function(BaseController, MessageBox, Utilities, Histor,Filter, FilterOperator) {
 	"use strict";
 
-	return BaseController.extend("com.sap.build.standard.endUserApp.controller.Page9", {
+	return BaseController.extend("com.sap.build.standard.endUserApp.controller.Skills", {
 		handleRouteMatched: function(oEvent) {
 
 			var oParams = {};
@@ -21,7 +23,12 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 					this.getView().bindObject(oPath);
 				}
 			}
-
+		var filters = [];
+		var filterByName = new sap.ui.model.Filter("Userid", sap.ui.model.FilterOperator.EQ, "P1942248500");
+		filters.push(filterByName);
+		var oList = this.byId("skills");
+		var oBinding = oList.getBinding("items");
+		oBinding.filter(filters);
 		},
 		_onPageNavButtonPress: function() {
 
@@ -53,7 +60,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 
 			return new Promise(function(fnResolve) {
 
-				this.doNavigate("Addopleiding", oBindingContext, fnResolve, "");
+				this.doNavigate("AddSkills", oBindingContext, fnResolve, "");
 			}.bind(this)).catch(function(err) {
 				if (err !== undefined) {
 					MessageBox.error(err.message);
@@ -117,7 +124,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 		},
 		onInit: function() {
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			this.oRouter.getTarget("Page9").attachDisplay(jQuery.proxy(this.handleRouteMatched, this));
+			this.oRouter.getTarget("Skills").attachDisplay(jQuery.proxy(this.handleRouteMatched, this));
 
 		}
 	});

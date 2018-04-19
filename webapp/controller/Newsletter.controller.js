@@ -5,7 +5,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 ], function(BaseController, MessageBox, Utilities, History) {
 	"use strict";
 
-	return BaseController.extend("com.sap.build.standard.endUserApp.controller.SAPDomeinTypeDeveloper0", {
+	return BaseController.extend("com.sap.build.standard.endUserApp.controller.Newsletter", {
 		handleRouteMatched: function(oEvent) {
 
 			var oParams = {};
@@ -49,7 +49,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 		},
 		onInit: function() {
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			this.oRouter.getTarget("SAPDomeinTypeDeveloper0").attachDisplay(jQuery.proxy(this.handleRouteMatched, this));
+			this.oRouter.getTarget("Newsletter").attachDisplay(jQuery.proxy(this.handleRouteMatched, this));
 
 		}
 	});

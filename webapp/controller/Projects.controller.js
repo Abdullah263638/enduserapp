@@ -1,11 +1,13 @@
 sap.ui.define(["sap/ui/core/mvc/Controller",
 	"sap/m/MessageBox",
 	"./utilities",
-	"sap/ui/core/routing/History"
-], function(BaseController, MessageBox, Utilities, History) {
+	"sap/ui/core/routing/History",
+	"sap/ui/model/Filter",
+	"sap/ui/model/FilterOperator",
+], function(BaseController, MessageBox, Utilities, History, Filter, FilterOperator) {
 	"use strict";
 
-	return BaseController.extend("com.sap.build.standard.endUserApp.controller.Page9", {
+	return BaseController.extend("com.sap.build.standard.endUserApp.controller.Projects", {
 		handleRouteMatched: function(oEvent) {
 
 			var oParams = {};
@@ -21,7 +23,19 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 					this.getView().bindObject(oPath);
 				}
 			}
+		var filters = [];
+		var filterByName = new sap.ui.model.Filter("Userid", sap.ui.model.FilterOperator.EQ, "S0019143758");
+		filters.push(filterByName);
+		var oList = this.byId("projecten");
+		var oBinding = oList.getBinding("items");
+		oBinding.filter(filters);
+		
+		/*	var oFilterCity = new sap.ui.model.Filter("Bpnr",
+				sap.ui.model.FilterOperator.EQ, oCtx.ExternalBusinessPartner);
 
+			var oList = this.getView().byId("lijstID");
+			oList.getBinding("items").filter([oFilterCity]);*/
+		
 		},
 		_onPageNavButtonPress: function() {
 
@@ -35,6 +49,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 				oRouter.navTo("default", true);
 			}
+				
 		},
 		getQueryParameters: function(oLocation) {
 
@@ -53,7 +68,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 
 			return new Promise(function(fnResolve) {
 
-				this.doNavigate("Addopleiding", oBindingContext, fnResolve, "");
+				this.doNavigate("AddProject", oBindingContext, fnResolve, "");
 			}.bind(this)).catch(function(err) {
 				if (err !== undefined) {
 					MessageBox.error(err.message);
@@ -114,11 +129,20 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 			if (typeof fnPromiseResolve === "function") {
 				fnPromiseResolve();
 			}
+			
 		},
+	/*	init: function(){
+			 var filters = [];
+             var filterByName = new sap.ui.model.Filter("Userid", sap.ui.model.FilterOperator.EQ, "P1942248500");
+             filters.push(filterByName);
+             var oList = this.byId("projecten");
+             var oBinding = oList.getBinding("items");
+             oBinding.filter(filters);
+		},*/
 		onInit: function() {
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			this.oRouter.getTarget("Page9").attachDisplay(jQuery.proxy(this.handleRouteMatched, this));
-
+			this.oRouter.getTarget("Projects").attachDisplay(jQuery.proxy(this.handleRouteMatched, this));
+		 
 		}
 	});
 }, /* bExport= */ true);

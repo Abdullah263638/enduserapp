@@ -1,11 +1,11 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.SAPDomeinTypeDeveloper2" xmlns="sap.m">
-    <Page showHeader="true" title="Type Functional" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.ScoreTypeDeveloper" xmlns="sap.m">
+    <Page showHeader="true" title="Type" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
         <content>
-            <StandardListItem title="Metering" description="" info="" infoState="Success" type="Navigation" selected="true" press="_onStandardListItemPress"/>
+            <StandardListItem title="SAP UI5" description="" info="" infoState="Success" type="Active" selected="true" press="_onStandardListItemPress"/>
             <Slider min="0" max="100" value="0" step="1" enabled="true" visible="true" width="100%" progress="true"/>
-            <StandardListItem title="Device Management" description="" info="" infoState="Success" type="Navigation" selected="true" press="_onStandardListItemPress1"/>
+            <StandardListItem title="ABAP" description="" info="" infoState="Success" type="Active" selected="true" press="_onStandardListItemPress1"/>
             <Slider min="0" max="100" value="0" step="1" enabled="true" visible="true" width="100%" progress="true"/>
-            <StandardListItem title="Billing" description="" info="" infoState="Success" type="Navigation" selected="true" press="_onStandardListItemPress2"/>
+            <StandardListItem title="Adobe Forms" description="" info="" infoState="Success" type="Active" selected="true" press="_onStandardListItemPress2"/>
             <Slider min="0" max="100" value="0" step="1" enabled="true" visible="true" width="100%" progress="true"/>
             <ProgressIndicator width="100%" percentValue="75" showValue="true" displayValue="Progress" state="Success" enabled="true" visible="true"/>
         </content>
@@ -18,7 +18,9 @@
                 <contentRight/>
             </Bar>
         </footer>
-        <headerContent/>
+        <headerContent>
+            <Button text="Add Projects" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+        </headerContent>
         <subHeader/>
         <customHeader/>
     </Page>

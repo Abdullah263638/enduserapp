@@ -1,11 +1,12 @@
 sap.ui.define(["sap/ui/core/mvc/Controller",
 	"sap/m/MessageBox",
 	"./utilities",
-	"sap/ui/core/routing/History"
+	"sap/ui/core/routing/History",
+
 ], function(BaseController, MessageBox, Utilities, History) {
 	"use strict";
 
-	return BaseController.extend("com.sap.build.standard.endUserApp.controller.Page9", {
+	return BaseController.extend("com.sap.build.standard.endUserApp.controller.ScoreTypeFunctional", {
 		handleRouteMatched: function(oEvent) {
 
 			var oParams = {};
@@ -21,6 +22,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 					this.getView().bindObject(oPath);
 				}
 			}
+	
 
 		},
 		_onPageNavButtonPress: function() {
@@ -47,13 +49,13 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 			return oQuery;
 
 		},
-		_onButtonPress: function(oEvent) {
+		_onStandardListItemPress: function(oEvent) {
 
 			var oBindingContext = oEvent.getSource().getBindingContext();
 
 			return new Promise(function(fnResolve) {
 
-				this.doNavigate("Addopleiding", oBindingContext, fnResolve, "");
+				this.doNavigate("AddProject", oBindingContext, fnResolve, "");
 			}.bind(this)).catch(function(err) {
 				if (err !== undefined) {
 					MessageBox.error(err.message);
@@ -115,9 +117,51 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 				fnPromiseResolve();
 			}
 		},
+		_onStandardListItemPress1: function(oEvent) {
+
+			var oBindingContext = oEvent.getSource().getBindingContext();
+
+			return new Promise(function(fnResolve) {
+
+				this.doNavigate("AddProject", oBindingContext, fnResolve, "");
+			}.bind(this)).catch(function(err) {
+				if (err !== undefined) {
+					MessageBox.error(err.message);
+				}
+			});
+
+		},
+		_onStandardListItemPress2: function(oEvent) {
+
+			var oBindingContext = oEvent.getSource().getBindingContext();
+
+			return new Promise(function(fnResolve) {
+
+				this.doNavigate("AddProject", oBindingContext, fnResolve, "");
+			}.bind(this)).catch(function(err) {
+				if (err !== undefined) {
+					MessageBox.error(err.message);
+				}
+			});
+
+		},
+		_onButtonPress: function(oEvent) {
+
+			var oBindingContext = oEvent.getSource().getBindingContext();
+
+			return new Promise(function(fnResolve) {
+
+				this.doNavigate("AddProject", oBindingContext, fnResolve, "");
+			}.bind(this)).catch(function(err) {
+				if (err !== undefined) {
+					MessageBox.error(err.message);
+				}
+			});
+
+		},
 		onInit: function() {
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			this.oRouter.getTarget("Page9").attachDisplay(jQuery.proxy(this.handleRouteMatched, this));
+			this.oRouter.getTarget("ScoreTypeFunctional").attachDisplay(jQuery.proxy(this.handleRouteMatched, this));
 
 		}
 	});

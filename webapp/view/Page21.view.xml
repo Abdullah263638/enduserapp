@@ -1,4 +1,4 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.Page21" xmlns="sap.m">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.endUserApp.controller.SAPDomeinTypeDeveloper1" xmlns="sap.m">
     <Page showHeader="true" title="Type Functional" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
         <content>
             <StandardListItem title="FICO" description="" info="" infoState="Success" type="Navigation" selected="true" press="_onStandardListItemPress"/>
